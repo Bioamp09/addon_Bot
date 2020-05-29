@@ -55,10 +55,10 @@ async def on_message(message):
 		elif command == HELP:
 			await channel.send("\
 			List of commands:\n\
-			!addon add [id] [role]: Adds an addon with Project ID [id] to the tracker. When updates are available, it will tag @[role]. Default is 'here'.\n\
-			!addon help: displays the list of commands.\n\
-			!addon list: Shows all addons currently being tracked.\n\
-			!addon remove [id]: Removes an addon from the tracker with Project ID [id]")
+		!addon add [id] [role]: Adds an addon with Project ID [id] to the tracker. When updates are available, it will tag @[role]. Default is 'here'.\n\
+		!addon help: Displays the list of commands.\n\
+		!addon list: Shows all addons currently being tracked.\n\
+		!addon remove [id]: Removes an addon from the tracker with Project ID [id]")
 
 		elif command == ADD:
 			if(!intCheck(messageContentArray[2])):
